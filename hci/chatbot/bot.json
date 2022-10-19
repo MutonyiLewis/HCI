@@ -1,0 +1,16 @@
+{
+  "id": "b4838a39-e4dd-4043-94e9-5000339fa1bb",
+  "name": "My First CSML Bot",
+  "description": "",
+  "default_flow": "Default",
+  "flows": [
+    {
+      "name": "Default",
+      "description": "",
+      "commands": []
+    }
+  ],
+  "files": [],
+  "functions": [],
+  "apps": []
+}

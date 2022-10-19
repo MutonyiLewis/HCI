@@ -1,0 +1,32 @@
+/**
+ * Welcome to CSML Studio!
+ *
+ * This simple CSML starter flow works out of the box, and you can easily
+ * try it on the right hand side by clicking on `build and run`.
+ *
+ * Some useful CSML links:
+ * 👉 Getting started: https://docs.csml.dev/studio/getting-started
+ * 👉 Give CSML a 🌟 on Github: https://github.com/CSML-by-Clevy/csml-engine
+ * 👉 Join the CSML community on Slack: https://csml.dev/slack
+ */
+start:
+  
+  say "Hi, I'm Mutahi. Welcome to the moh chat"
+  say Wait(3000)
+  say Typing(1500)
+
+  say Question(
+  "How may I help you today",
+  buttons=[
+    Button("My registration failed") as btnfail,
+    Button("can I view my certificate") as btncert,
+    Button("I'm curious") as btncur,
+  ]
+)
+hold
+if (event.match(btnfail)) say "Try inputting a Valid phone number and fill each input"
+if (event.match(btncert)) say "Yes, After receiving your jab your certificate will be sent to you via email"
+if (event.match(btncur)) say Image("https://www.health.go.ke/wp-content/uploads/2020/03/PHOTO-2020-03-25-12-33-15-e1585131014481.jpg")
+
+
+  
